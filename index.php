@@ -1,5 +1,5 @@
 <?php
-//This is a test of the commit function
+//This is a test of the commit function!!
 $index = <<<_END
 <!--structure taken from http://codepen.io/matthu185/pen/myyvgr-->
 <head>
