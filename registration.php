@@ -61,6 +61,9 @@ $registration = <<<_END
           
           <label for="country">Country / Pais:</label>
           <input type="text" id="country" name="country">
+        
+          <label for="emernumber">Emergency Number / Número de Emergencia:</label>
+          <input type="text" id="emernumber" name="emernumber">
           
           <label for="additionalInfo">Please describe any additional services you may need (Optional):</label>
           <textarea id="additionalInfo" name="additionalInfo"></textarea>          
@@ -70,7 +73,8 @@ $registration = <<<_END
           
           <label for="password">Password:</label>
           <input type="password" id="password" name="password">
-          
+          <label for="repassword">Repeat Password:</label>
+          <input type="repassword" id="repassword" name="repassword">
                     
         </fieldset>
         
