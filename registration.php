@@ -73,8 +73,9 @@ $registration = <<<_END
           
           <label for="password">Password:</label>
           <input type="password" id="password" name="password">
+        
           <label for="repassword">Repeat Password:</label>
-          <input type="repassword" id="repassword" name="repassword">
+          <input type="password" id="repassword" name="repassword">
                     
         </fieldset>
         
