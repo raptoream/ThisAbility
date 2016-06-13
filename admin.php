@@ -23,16 +23,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="registration.css">
         
-        <script>
-            $(function () {
-                $("#birthdate").datepicker({
-                    changeMonth: true,
-                    changeYear: true,
-                    yearRange: "1900:2100"
-                });
-            });
-
-        </script>
+        <script></script>
         
     </head>
     <body>
