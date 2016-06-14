@@ -50,6 +50,9 @@ $registration = <<<_END
           <label for="email">Email:</label>
           <input type="email" id="email" name="email">
           
+          <label for="phoneNumber">Phone Number / Número de Teléfono:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber">
+        
           <label for="address">Address / Domicilio:</label>
           <input type="text" id="address" name="address">
           
@@ -62,8 +65,8 @@ $registration = <<<_END
           <label for="country">Country / Pais:</label>
           <input type="text" id="country" name="country">
         
-          <label for="emernumber">Emergency Number / Número de Emergencia:</label>
-          <input type="text" id="emernumber" name="emernumber">
+          <label for="emergencyNumber">Emergency Number / Número de Emergencia:</label>
+          <input type="text" id="emergencyNumber" name="emergencyNumber">
           
           <label for="additionalInfo">Please describe any additional services you may need (Optional):</label>
           <textarea id="additionalInfo" name="additionalInfo"></textarea>          
