@@ -1,5 +1,5 @@
 	<?php
-echo $firstName=$_POST["firstName"];
+$firstName=$_POST["firstName"];
 $lastName=$_POST["lastName"];
 $birthdate=$_POST["birthdate"];
 $gender=$_POST["gender"];
@@ -21,21 +21,24 @@ $m = new MongoClient("mongodb://$username:$password@127.0.0.1:27017",
 //$m = new MongoClient();
 $coleccion = $m->selectCollection('thisability', 'user');
 
+$findName = array('username' => $username);
+$cursor = $collection->find($findName);
 
-$data = array(	"firstName" => $firstName,
-				"lastName" => $lastName,
-				"birthdate" => $birthdate,
-				"gender" => $gender,
-				"email" => $email,
-				"address" => $address,
-				"cityState" => $cityState,
-				"zip" => $zip,
-				"country" => $country,
-				"additionalInfo" => $additionalInfo,
-				"username" => $username,
-				"password" => $password
-				 
-);
-$coleccion->insert($data);
+if(sizeof($array)){
+    $data = array(	"firstName" => $firstName,
+                                    "lastName" => $lastName,
+                                    "birthdate" => $birthdate,
+                                    "gender" => $gender,
+                                    "email" => $email,
+                                    "address" => $address,
+                                    "cityState" => $cityState,
+                                    "zip" => $zip,
+                                    "country" => $country,
+                                    "additionalInfo" => $additionalInfo,
+                                    "username" => $username,
+                                    "password" => $password
 
+    );
+    $coleccion->insert($data);
+}
 ?>
