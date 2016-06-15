@@ -28,7 +28,7 @@ $registration = <<<_END
     </head>
     <body>
 
-        <form action="welcome.php" method="post">
+        <form action="welcome.php?val=reg" method="post">
       
         <h1>Registration</h1>
         

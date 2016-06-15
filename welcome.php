@@ -30,7 +30,12 @@
         
     </head>
     <body>
-
+    <?php 
+        $val=$_GET["val"];
+        if($val=="reg"){
+            require("registrationSave.php");
+        }
+    ?>
         <form method="post">
       
         <h1>Client Services</h1>
