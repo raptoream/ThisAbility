@@ -12,17 +12,17 @@ $additionalInfo=$_POST["additionalInfo"];
 $username=$_POST["username"];
 $password=$_POST["password"];
 
-$username = "admin";
-$password = "3ZN8AY53";
+$usernamedb = "admin";
+$passworddb = "3ZN8AY53";
 
-$m = new MongoClient("mongodb://$username:$password@127.0.0.1:27017",
+$m = new MongoClient("mongodb://$usernamedb:$passworddb@127.0.0.1:27017",
   	array("db" => "admin"));
 
 //$m = new MongoClient();
-$coleccion = $m->selectCollection('thisability', 'user');
+//$coleccion = $m->selectCollection('thisability', 'user');
 
-$findName = array('username' => $username);
-$cursor = $collection->find($findName);
+//$findName = array('username' => $username);
+//$cursor = $collection->find($findName);
 
 if(sizeof($array)){
     $data = array(	"firstName" => $firstName,
