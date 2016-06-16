@@ -1,10 +1,11 @@
 <?php
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-?>
+$payment = <<<_END
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -39,7 +40,7 @@
 </head>
 <body>
 
-    <form action="welome.php" method="post">
+    <form action="welcome.php" method="post">
 
         <h1>Billing Information</h1>
 
@@ -78,13 +79,12 @@
                 <input type="text" id="policyNumber" name="policyNumber">
             </div>
         </fieldset>
-
-
-
-
-
         <button type="submit">Submit</button>
     </form>
 
 </body>
 </html>
+        
+_END;
+echo $payment;
+?>
